@@ -1,0 +1,69 @@
+// Testimonial slider style 
+
+.trstimonial-area{
+	background-color: #f2f8fd;
+	padding-bottom: 80px;
+	@media #{$desktop-device}{
+		padding-bottom: 60px;
+	}
+	@media #{$tablet-device}{
+		padding-bottom: 40px;
+	}
+	@media #{$large-mobile}{
+		padding-bottom: 40px;
+	}
+}
+.content-top{
+	padding-top: 60px;
+	padding-bottom: 20px;
+	.testi-inner{
+		.testi-content{
+			p{
+				font-size: 20px;
+				color: #000000;
+				font-style: italic;
+				line-height: 36px;
+				@media #{$large-mobile}{
+					font-size: 18px;
+					line-height: 32px;
+				}
+			}
+			position: relative;
+			padding-left: 30px;
+			&::after{
+				position: absolute;
+				top: -2px;
+				left: 0;
+				width: 62px;
+				height: 44px;
+				content: "";
+				background-image: url(../images/testimonial/quote-shape.png);
+				background-repeat: no-repeat;
+				background-position: left top;
+			}
+		}
+		.testi-author{
+			display: flex;
+			align-items: center;
+			margin-left: 30px;
+			margin-top: 35px;
+			.name{
+				color: $theme-color;
+				font-size: 18px;
+				line-height: 1;
+				margin:0;
+				font-weight: 600;
+				padding-left: 30px;
+				span{
+					display:block;
+					font-size: 16px;
+					font-weight: 400;
+					color: #444141;
+					margin: 10px 0 0;
+				}
+			}
+		}
+	}
+}
+
+

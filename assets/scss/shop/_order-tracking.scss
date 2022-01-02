@@ -1,0 +1,79 @@
+/* 18.01.05. Order Tracking CSS */
+.order-tracking {
+    max-width: 630px;
+    margin: auto;
+    padding: 60px;
+
+    background-color: #f8f9fa;
+	box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+
+    & p {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+	label {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.125;
+		display: block;
+		margin-bottom: 10px;
+		letter-spacing: 1.6px;
+		color: #333;
+	}
+
+    & input {
+        font-weight: 400;
+		font-size: 15px;
+		font-weight: 400;
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		color: #333;
+		border: 2px solid transparent;
+		border-bottom-color: #ededed;
+		background-color: transparent;
+		&::placeholder {
+            font-weight: 400;
+        }
+		&:focus{
+			border-bottom-color:$theme-color;
+		}
+    }
+
+    @media #{$small-mobile} {
+        padding: 40px;
+    }
+
+    @media #{$extra-small-mobile} {
+        padding: 30px;
+    }
+	.btn {
+		font-weight: 400;
+		line-height: 24px;
+		padding: 15px 40px;
+		text-align: center;
+		white-space: nowrap;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		border-radius: 500px;
+		height: auto;
+		width: auto;
+		background-color: #000;
+		border-color: #000;
+		color: #fff;
+		@media #{$tablet-device, $large-mobile}{
+			padding: 10px 30px;
+			font-size: 16px;
+		}
+		&:hover{
+			background-color: $theme-color;
+			border-color: $theme-color;
+			color: #fff;
+		}
+		&:focus{
+			box-shadow: none;
+		}
+	}
+}

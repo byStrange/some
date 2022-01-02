@@ -1,0 +1,204 @@
+/* 18.05. Coming Soon Page CSS */
+
+/* Coming Soon Section */
+.coming-soon-section {
+    display: flex;
+
+    min-height: 100vh;
+}
+
+/* Coming Soon Content */
+.coming-soon-content {
+    text-align: center;
+
+    & .logo {
+        margin-bottom: 80px;
+
+        & a {
+            & img {
+            }
+        }
+    }
+
+    & .title {
+        font-size: 56px;
+        font-weight: 500;
+
+        margin-bottom: 40px;
+    }
+
+    & .countdown3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin-bottom: 80px;
+
+        & .count {
+            min-width: 130px;
+            margin: 0 10px;
+
+            & span {
+                display: block;
+
+                color: $heading-color;
+
+                &.amount {
+                    font-size: 100px;
+                    line-height: 1;
+                }
+
+                &.period {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1;
+
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+
+    @media #{$tablet-device} {
+        & .countdown3 {
+            & .count {
+                min-width: 100px;
+
+                & span {
+                    &.amount {
+                        font-size: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{$large-mobile} {
+        & .logo {
+            margin-bottom: 60px;
+        }
+
+        & .title {
+            font-size: 44px;
+
+            margin-bottom: 30px;
+        }
+
+        & .countdown3 {
+            margin-bottom: 60px;
+
+            & .count {
+                min-width: 80px;
+
+                & span {
+                    &.amount {
+                        font-size: 60px;
+                    }
+
+                    &.period {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{$extra-small-mobile} {
+        & .logo {
+            margin-bottom: 40px;
+        }
+
+        & .title {
+            font-size: 30px;
+
+            margin-bottom: 30px;
+        }
+
+        & .countdown3 {
+            margin-bottom: 40px;
+
+            & .count {
+                min-width: 60px;
+                margin: 0 5px;
+
+                & span {
+                    &.amount {
+                        font-size: 40px;
+                    }
+
+                    &.period {
+                        font-size: 12px;
+
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widget-subscibe input[type="email"] {
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 170px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    letter-spacing: .03em;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.widget-subscibe {
+    position: relative;
+    width: 100%;
+    max-width: 570px;
+    margin: auto;
+}
+
+.widget-subscibe .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1.5px;
+    border-color: #333;
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    width: 160px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 500px;
+    outline: none;
+    &:hover{
+        color: #fff;
+        background-color: $theme-color;
+        border-color: $theme-color;
+    }
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        
+    }
+}
+
+@media #{$small-mobile}{
+    .widget-subscibe .btn {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .widget-subscibe input[type="email"] {
+        padding-right: 20px;
+    }
+
+}

@@ -1,0 +1,183 @@
+// Contact Page Style
+
+.contact-map{
+    margin-top: -140px;
+    @media #{$tablet-device, $large-mobile} {
+        margin-top: 0px;
+    }
+}
+.gmap_canvas {
+	line-height: 0;
+	iframe {
+		overflow: hidden;
+		background: none !important;
+		height: 600px;
+		width: 100%;
+		@media #{$tablet-device} {
+			height: 400px;
+		}
+		@media #{$large-mobile} {
+			height: 350px;
+		}
+	}
+}
+
+.contact-wrapper {
+    background-color: #f5f5f5;
+    padding: 110px 120px 0px 120px;
+    @media #{$desktop-device} {
+        padding: 70px 80px 0px 80px;
+    }
+    @media #{$tablet-device, $large-mobile} {
+        padding: 50px 60px 60px 60px;
+    }
+    @media #{$small-mobile} {
+        padding: 50px 30px 60px 30px;
+    }
+    @media #{$extra-small-mobile} {
+        padding: 50px 20px 60px 20px;
+    }
+	.contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 120px;
+        position: relative;
+        z-index: 1;
+        @media #{$desktop-device} {
+            margin-top: 80px;
+        }
+        @media #{$tablet-device, $large-mobile} {
+            margin-top: 60px;
+            flex-direction: column;
+        }
+		.single-contact {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+            width: 270px;
+            height: 264px;
+            box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+            @media #{$desktop-device} {
+                width: 240px;
+                height: 250px;
+            }
+            @media #{$tablet-device, $large-mobile} {
+                width: auto;
+                height: auto;
+                margin-bottom: 50px;
+                padding: 40px 0;
+            }
+			.icon-box {
+			}
+			.info-box {
+                text-align: center;
+                line-height: 1;
+				.title {
+                    font-size: 24px;
+                    color: #2e2e2e;
+                    font-weight: 500;
+                    margin: 21px 0 18px 0;
+					@media #{$extra-small-mobile} {
+						font-size: 20px;
+					}
+				}
+				p {
+					font-size: 16px;
+					color: #000000;
+					font-weight: 400;
+                    line-height: 26px;
+				}
+				a {
+					color: #000000;
+					&:hover {
+						color: $theme-color;
+					}
+				}
+				
+			}
+		}
+	}
+}
+.contact-form {
+	.contact-title {
+        margin: 0 0 52px;
+        text-align: center;
+		.title {
+			font-size: 48px;
+			color: #000;
+			font-weight: 500;
+			margin: 0;
+            line-height: 1;
+			@media #{$desktop-device} {
+				font-size: 36px;
+			}
+			@media #{$tablet-device} {
+				font-size: 32px;
+			}
+			@media #{$large-mobile} {
+				font-size: 28px;
+			}
+		}
+		p{
+			color: #747474;
+			line-height: 27px;
+		}
+	}
+	.contact-form-style {
+		input,
+		textarea {
+			background: #fff;
+			border: 1px solid #d7d7d7;
+			margin-bottom: 30px;
+			color: $body-color;
+			font-size: 14px;
+            border-radius: 15px;
+            font-weight: 300;
+			&::placeholder{
+				font-style: italic;
+				color: #999999;
+			}
+			&:focus{
+				border-color: $theme-color;
+				color: #000;
+			}
+		}
+		textarea {
+			margin-bottom:50px;
+			height: 250px;
+		}
+	}
+	p {
+		color: $body-color;
+	}
+	button {
+		font-size: 18px;
+		font-weight: 600;
+        width: 230px;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: $theme-color;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        text-transform: capitalize;
+        margin:auto;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }
+        @media #{$large-mobile} {
+            font-size: 16px;
+            width: 190px;
+            height: 54px;
+        }
+	}
+}

@@ -1,0 +1,48 @@
+// Fashion area style
+.fashion-area{
+    height: 456px;
+    background-color: #eee;
+    background-position: center;
+    background-size: cover;
+    @media #{$tablet-device, $large-mobile}{
+        height: 356px;
+    }
+    
+    @media #{$small-mobile}{
+        height: 300px;
+    }
+    .title{
+        span{
+            font-size: 48px;
+            font-weight: 300;
+            display: block;
+            @media #{$tablet-device, $large-mobile}{
+                font-size: 36px;
+            }
+            @media #{$small-mobile}{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        font-size: 60px;
+        color: #fff;
+        font-weight: 700;
+        line-height: 74px;
+        margin-bottom: 45px;
+        @media #{$tablet-device, $large-mobile}{
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 32px;
+        }
+        @media #{$small-mobile}{
+            font-size: 32px;
+            line-height: 50px;
+            margin-bottom: 25px;
+        }
+        @media #{$extra-small-mobile}{
+            font-size: 28px;
+        }
+    }
+    .btn{
+    }
+}

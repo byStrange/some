@@ -1,0 +1,178 @@
+//Footer Area Style
+
+.footer-area {
+	color: #3a3a3a;
+	background: #f2f8fd;
+	.footer-top {
+		padding: 100px 0 100px 0;
+		@media #{$desktop-device} {
+			padding: 80px 0 60px 0;
+		}
+		@media #{$tablet-device} {
+			padding: 60px 0 40px 0;
+		}
+		@media #{$large-mobile} {
+			padding: 50px 0 50px 0;
+		}
+		& .single-wedge {
+			.footer-logo {
+				margin: 0 0 20px;
+			}
+			& .footer-herading {
+				font-size: 24px;
+				text-transform: capitalize;
+				font-weight: 500;
+				margin-bottom: 20px;
+				position: relative;
+				color: #323232;
+			}
+			& .about-text {
+				font-size: 16px;
+				max-width: 270px;
+				line-height: 32px;
+				color: #3a3a3a;
+				font-weight: 400;
+				@media #{$desktop-device}{
+					font-size: 14px;
+					line-height: 28px;
+				}
+				@media #{$large-mobile} {
+					max-width: 454px;
+				}
+			}
+			.footer-links {
+				& li {
+					display: block;
+					margin: 0;
+					line-height: 1;
+					border: 0;
+					font-weight: 400;
+					margin-bottom: 5px;
+				}
+				& .single-link {
+					font-size: 16px;
+					line-height: 26px;
+					padding: 0;
+					display: inline-block;
+					text-transform: capitalize;
+					color: #000000;
+					margin-bottom: 0;
+					display: inline-block;
+					position: relative;
+					-webkit-transition: all 300ms linear;
+					-moz-transition: all 300ms linear;
+					-ms-transition: all 300ms linear;
+					-o-transition: all 300ms linear;
+					transition: all 300ms linear;
+					@media #{$desktop-device}{
+						font-size: 14px;
+						line-height: 24px;
+					}
+					&:hover {
+						padding-left: 8px;
+						color: $theme-color;
+					}
+				}
+				p {
+					margin: 0 0 0px;
+					font-weight: 400;
+					color: #000000;
+					@media #{$desktop-device}{
+						font-size: 14px;
+						line-height: 28px;
+					}
+					a {
+						color: #000000;
+						&:hover {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+		.pl-lg-60px {
+			padding-left: 60px;
+			@media #{$desktop-device}{
+				padding-left: 30px;
+			}
+			@media #{$tablet-device}{
+				padding-left: 15px;
+			}
+			@media #{$large-mobile}{
+				padding-left: 15px;
+			}
+		}
+		.pl-lg-40px {
+			padding-left: 40px;
+			@media #{$desktop-device}{
+				padding-left: 30px;
+			}
+			@media #{$tablet-device}{
+				padding-left: 15px;
+			}
+			@media #{$large-mobile}{
+				padding-left: 15px;
+			}
+		}
+	}
+}
+
+.link-follow {
+    margin-top: 20px;
+	& li {
+		list-style: none;
+		display: inline-block;
+	}
+	& a {
+		color: #fff;
+		margin-left: 7px;
+		font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 36px;
+        width: 36px;
+		background-color: #5d5d5d;
+		border-radius: 5px;
+		&:hover {
+			color: #fff;
+			transform: translateY(-1px);
+            background-color: $theme-color;
+		}
+	}
+}
+
+.footer-bottom {
+	background: #e2f2ff none repeat scroll 0 0;
+	padding: 25px 0 20px 0;
+	& .copy-text {
+		color: #4d4d4d;
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 400;
+		@media #{$desktop-device, $tablet-device, $large-mobile}{
+			font-size: 14px;
+			line-height: 24px;
+		}
+		@media #{$large-mobile}{
+			margin-top: 10px;
+		}
+		@media #{$extra-small-mobile}{
+			font-size: 13px;
+		}
+
+		& .company-name {
+			color: #4d4d4d;
+            font-weight: 300;
+			&:hover {
+				color: $theme-color;
+			}
+		}
+		& i {
+			color: $theme-color;
+			margin: 0 3px;
+			font-size: 16px;
+		}
+	}
+}

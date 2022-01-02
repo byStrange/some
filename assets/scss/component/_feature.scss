@@ -1,0 +1,109 @@
+/* feature section style*/
+
+.feature-area {
+	position: relative;
+	z-index: 1;
+}
+.feature-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	border: 2px solid #e1e1e1;
+	padding: 100px 55px;
+	border-radius: 20px;
+	z-index: 1;
+	@media #{$desktop-device} {
+		padding: 80px 25px;
+	}
+	@media #{$tablet-device} {
+		padding: 60px 25px;
+
+	}
+	@media #{$large-mobile} {
+		padding: 60px 25px;
+
+	}
+	@media #{$extra-small-mobile} {
+		padding: 50px 15px;
+	}
+	& .single-feture-col {
+		padding-right: 15px;
+		padding-left: 15px;
+		flex: 0 0 auto;
+		width: 33.3333333333%;
+		@media #{$laptop-device, $desktop-device} {
+			flex: 0 0 auto;
+			width: 33.3333333333%;
+		}
+		@media #{$tablet-device} {
+			flex: 0 0 auto;
+			width: 50%;
+		}
+		@media #{$large-mobile} {
+			flex-shrink: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+		@media #{$extra-small-mobile} {
+			padding: 0;
+		}
+	}
+}
+.single-feature {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: $white;
+	@media #{$desktop-device} {
+	}
+	@media #{$tablet-device} {
+	}
+	@media #{$extra-small-mobile} {
+	}
+	.feature-icon {
+		width: 70px;
+		height: 70px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		margin-right: 30px;
+		background-color: $theme-color;
+
+		@media #{$desktop-device, $extra-small-mobile} {
+			margin-right: 20px;
+		}
+	}
+	.feature-content {
+		width: calc(100% - 100px);
+		@media #{$desktop-device, $extra-small-mobile} {
+			width: calc(100% - 90px);
+		}
+		.title {
+			font-size: 24px;
+			color: #000;
+			font-weight: 600;
+			margin: 0 0 3px;
+			@media #{$desktop-device, $tablet-device, $extra-small-mobile} {
+				font-size: 20px;
+			}
+		}
+		.sub-title {
+			font-size: 16px;
+			color: #000000;
+			font-weight: 400;
+			@media #{$desktop-device, $tablet-device, $extra-small-mobile} {
+				font-size: 14px;
+			}
+		}
+	}
+	& img {
+		transition: $baseTransition;
+	}
+	&:hover {
+		& img {
+			transform: scale(0.9) rotate(3deg);
+		}
+	}
+}

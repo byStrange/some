@@ -1,0 +1,280 @@
+.about-area{
+  background-color: #f4f4f4;
+  max-height: 685px;
+  @media #{$desktop-device}{
+    max-height: 584px;
+  }
+  @media #{$tablet-device}{
+    max-height: 520px;
+  }
+  
+  @media #{$large-mobile} {
+    max-height: 550px;
+  }
+  
+  @media #{$extra-small-mobile} {
+    max-height: 630px;
+  }
+}
+.about-contant{
+  max-width: 890px;
+  margin: auto;
+  .title{
+    font-size: 60px;
+    font-weight: 700;
+    color: #444141;
+    line-height: 40px;
+    margin-bottom: 50px;
+    @media #{$tablet-device}{
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+		@media #{$large-mobile} {
+      font-size: 32px;
+      margin-bottom: 30px;
+		}
+    span{
+      font-size: 48px;
+      font-weight: 300;
+      display: block;
+      margin-bottom: 30px;
+      @media #{$tablet-device}{
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      @media #{$large-mobile} {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  p{
+
+  }
+}
+.promo-video {
+  position: relative;
+  margin-top: 110px;
+  @media #{$desktop-device}{
+    margin-top: 90px;
+  }
+  @media #{$tablet-device}{
+    margin-top: 70px;
+  }
+  @media #{$large-mobile}{
+    margin-top: 60px;
+  }
+  & img{
+    max-width: 100%;
+    border-radius: 25px;
+  }
+  & .overlay-box {
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @media #{$large-mobile} {
+      width: 60px;
+      height: 60px;
+    }
+
+    & span {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 50%;
+      top: 50%;
+      z-index: 10;
+      color: #fff;
+      font-weight: 400;
+      font-size: 36px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 900ms ease;
+      -moz-transition: all 900ms ease;
+      -webkit-transition: all 900ms ease;
+      -ms-transition: all 900ms ease;
+      -o-transition: all 900ms ease;
+      background-color: $theme-color;
+      @media #{$large-mobile} {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.ripple,
+.ripple:before,
+.ripple:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  -webkit-animation: ripple 3s infinite;
+  -moz-animation: ripple 3s infinite;
+  -ms-animation: ripple 3s infinite;
+  -o-animation: ripple 3s infinite;
+  animation: ripple 3s infinite;
+  @media #{$large-mobile} {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.ripple:before {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  content: "";
+  position: absolute;
+}
+.ripple:after {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  content: "";
+  position: absolute;
+}
+
+/* Video  Icon Shadow Animation */
+
+@-webkit-keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 70px rgba(37, 24, 24, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.team-area{
+  margin-top: 385px;
+  @media #{$desktop-device}{
+    margin-top: 329px;
+  }
+  @media #{$tablet-device}{
+    margin-top: 235px;
+  }
+  @media #{$large-mobile}{
+    margin-top: 190px;
+  }
+  @media #{$extra-small-mobile} {
+    margin-top: 150px;
+  }
+  .team-wrapper {
+    .team-image {
+      position: relative;
+      & img {
+        max-width: 100%;
+        transition: $baseTransition;
+        width: 100%;
+        transform: scale(1.01) rotate(0deg);
+      }
+      .team-social {
+        justify-content: space-around;
+        background-color: $theme-color;
+        width: 200px;
+        height: 43px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 0 20px;
+        position: absolute;
+        top: auto;
+        bottom: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: $baseTransition;
+        li {
+          a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 16px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: $baseTransition;
+          }
+        }
+      }
+    }
+    .team-inner {
+      margin-top:30px;
+      transition: $baseTransition;
+      background-color: $white;
+      position: relative;
+      .team-content {
+        text-align: center;
+        line-height: 1;
+        .title {
+          font-size: 24px;
+          color: #000000;
+          font-weight: 500;
+          transition: $baseTransition;
+        }
+        .sub-title {
+          font-size: 16px;
+          font-weight: 400;
+          color: #000000;
+          text-transform: uppercase;
+          margin: 9px 0 0;
+          display: block;
+          transition: $baseTransition;
+        }
+      }
+    }
+    &:hover {
+      & .team-image {
+        & img {
+          transform: scale(1.1) rotate(3deg);
+        }
+      }
+      .team-social{
+        bottom: 0;
+      }
+    }
+  }
+}

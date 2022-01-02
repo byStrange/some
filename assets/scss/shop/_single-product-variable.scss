@@ -1,0 +1,35 @@
+.pro-details-color-size {
+	margin-top: 30px;
+	margin-bottom: 25px;
+	p{
+		font-weight: 500;
+		color: $theme-color;
+		margin: 0;
+	}
+	.ml-30px{
+		margin-left: 30px;
+		@media #{$small-mobile} {
+			margin-left: 20px;
+		}
+	}
+	.shop-select {
+		margin-left: 10px;
+		border-radius: 5px;
+		width: 100%;
+		color: #484545;
+	}
+	select {
+		word-wrap: normal;
+		border: 0;
+		cursor: pointer;
+		width: 100%;
+		&:focus-visible{
+			outline: 0;
+			border: 0;
+		}
+		option{
+				padding-top: 10px;
+				padding-bottom: 10px;
+		}
+	}
+}
